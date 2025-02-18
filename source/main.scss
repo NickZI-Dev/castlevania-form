@@ -1,0 +1,99 @@
+@use "./config/variaveis.scss";
+@use "sass:math";
+
+@function pixelParaEm ($alvoEmPixel, $contextoEmPixel: 16px) {
+  @return math.div($alvoEmPixel, $contextoEmPixel)+em
+};
+
+body {
+  font-family: variaveis.$fontePrincipal;
+  background-image: url(../img/catlevania-background.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+header {
+  justify-items: center;
+  h1 {
+   color: variaveis.$corSecundariaDeTexto;
+   font-weight: bold;
+   font-size: pixelParaEm(68px);
+  }
+}
+
+  .form-contato {
+    justify-content: center;
+
+    form {
+      width: 100%;
+      color: variaveis.$corDeTexto;
+      background-color: variaveis.$corPrincipal;
+      padding: 32px;
+      border: 4px solid #fff;
+  
+      button {
+        border: none;
+        padding: 8px;
+        max-width: 150px;
+        width: 100%;
+        color: variaveis.$corSecundariaDeTexto;
+        background-color: variaveis.$corbuttons;
+        transition: 0.8s;
+        justify-self: end;
+        &:hover {
+          background-color: darken(variaveis.$corbuttons, 30%);
+          color: variaveis.$corDeTexto;
+        }
+      }
+  
+      textarea {
+        resize: none;
+        height: 200px;
+      }
+  
+    }
+  
+  }
+
+  
+
+@media screen and (max-width: variaveis.$mobile) {
+
+  body {
+    background-size: contain;
+  }
+
+  header {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  .form-contato {
+    form {
+
+      button {
+        max-width: 100%;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width:variaveis.$tablet) and (max-width: variaveis.$mobile) {
+
+  body {
+    height: 100vh;
+    background-size: cover;
+  }
+  .form-contato {
+    form {
+      width: 350px;
+
+      button {
+        max-width: 100%;
+      }
+    }
+  }
+}
