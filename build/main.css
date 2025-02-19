@@ -2,6 +2,7 @@ body {
   font-family: "Jacquard 12", serif;
   background-image: url(../img/catlevania-background.jpg);
   background-size: cover;
+  background-position: center;
   height: 100vh;
 }
 
