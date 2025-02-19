@@ -25,20 +25,6 @@ header h1 {
   padding: 32px;
   border: 4px solid #fff;
 }
-.form-contato form button {
-  border: none;
-  padding: 8px;
-  max-width: 150px;
-  width: 100%;
-  color: #fff;
-  background-color: #636e72;
-  transition: 0.8s;
-  justify-self: end;
-}
-.form-contato form button:hover {
-  background-color: rgb(27.8873239437, 30.985915493, 32.1126760563);
-  color: #d63031;
-}
 .form-contato form textarea {
   resize: none;
   height: 200px;
@@ -53,7 +39,7 @@ header h1 {
     margin-bottom: 0;
   }
   .form-contato form button {
-    max-width: 100%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1023px) and (max-width: 767px) {

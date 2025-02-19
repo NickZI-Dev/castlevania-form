@@ -31,21 +31,7 @@ header {
       background-color: variaveis.$corPrincipal;
       padding: 32px;
       border: 4px solid #fff;
-  
-      button {
-        border: none;
-        padding: 8px;
-        max-width: 150px;
-        width: 100%;
-        color: variaveis.$corSecundariaDeTexto;
-        background-color: variaveis.$corbuttons;
-        transition: 0.8s;
-        justify-self: end;
-        &:hover {
-          background-color: darken(variaveis.$corbuttons, 30%);
-          color: variaveis.$corDeTexto;
-        }
-      }
+
   
       textarea {
         resize: none;
@@ -75,7 +61,7 @@ header {
     form {
 
       button {
-        max-width: 100%;
+        width: 100%;
       }
     }
   }
